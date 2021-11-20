@@ -1,0 +1,139 @@
+
+*{
+    box-sizing:border-box;
+
+    
+  
+}
+html{
+    margin:20px;
+   font-size:18px;
+font-family: sans-serif;
+    --ratio:1.4;
+
+   --size-one:calc(1rem * var(--ratio));
+   --size-two: calc(var(--size-one) * var(--ratio));
+   --size-three:calc(var(--size-two) * var(--ratio));
+    
+    
+
+}
+
+body{
+
+    margin:0;
+   background-color: rgb(227, 243, 169);
+    color:rgb(7, 93, 143);
+    text-align: center;
+    line-height: 1.2;
+    max-width :34 rem;
+    
+}
+
+.container{
+   
+    padding-top:1rem;
+    padding-right:1rem;
+    font-size:1rem;
+    width:100%;
+    height:100%;
+    max-width:900px;
+   
+    margin:10px auto;
+    background-color:rgb(235, 174, 174);
+    max-width :34 rem;
+    padding-bottom:10px;
+    
+}
+
+h1{
+    font-size:var(--size-three);
+
+}
+    h2{
+        font-size:var(--size-two);
+    }
+    h3{
+        margin:15px;
+        text-align: center;
+        font-size:var(--size-one);
+        color:rgb(75, 2, 2);
+        
+
+    }
+    p{
+        font-size: 1.2 rem;
+        
+    }
+.clear{
+    clear: both;
+
+}
+ 
+ .ellipse 
+ {
+    float:left;
+    height:200px;
+    margin-left: 10px;
+    
+   shape-outside:ellipse(48.2% 53.4% at 200px 100px);
+    clip-path:ellipse(48% 50%);
+    shape-margin: 4.5rem ;
+    filter: grayscale(100%);
+}
+
+
+
+
+.ellipse:hover{
+   
+    filter:hue-rotate(50deg);
+    mix-blend-mode: multiply;
+
+}
+
+.masktext h2{
+    margin:auto;
+    font-size:12vw;
+    
+   
+}
+.masktext{
+
+    background-image: url(../images/HalloweenBackground.png);
+    background-size:cover;
+    background-clip: text;
+    -webkit-background-clip:text;
+    color:transparent;
+    filter:drop-shadow(12px 12px 12px green);
+
+
+}
+
+@media screen (min-width:400px)
+{
+
+    html{
+
+        --ratio:2;
+        font-size: 24px;
+
+    --size-one:calc(1rem * var(--ratio));
+    --size-two:calc(var(--size-one) * var(--ratio));
+    --size-three:calc(var(--size-two) * var(--ratio));
+    }
+
+    p{
+        font-size: var(--size-one);
+    }
+    h1{
+        font-size:var(--size-three);}
+        h3{
+            font-size: var(--size-two);
+        }
+
+}
+        
+    
+
+

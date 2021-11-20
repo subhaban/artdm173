@@ -1,0 +1,38 @@
+
+*{
+    box-sizing: border-box;
+
+}
+
+body{
+
+    margin:0;
+    background:pink;
+    font-size:2rem;
+    color:blue;
+
+
+}
+ .circle{
+     float:left;
+     width: 400px;
+     height:400px;
+    min-width: 100%;
+    object-fit:cover;
+    object-position: -30vw center;
+
+  
+     
+     shape-outside: circle(50%);
+     clip-path: circle(50%);
+        shape-margin:2rem
+ }
+  .image{
+      width:400px;
+     height:400px;
+
+  }
+
+
+
+
