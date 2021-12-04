@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Rye&family=Vidaloka&display=swap');
 
 * {
     position: relative;
@@ -13,18 +12,18 @@ body {
     font-family: 'Roboto',"sans-serif";
     font-weight:400;
     font-size:1rem;
- 
+    background-color: #ecded7;
     color:#09363f;
 }
 .container {
-    margin: 10px;
+    margin: 5px;
     padding: .5rem;
     background-image: radial-gradient(#eccdbe, #eec5c7);
     background-repeat: no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height:100%;
+    max-height:200vw;
 
 }
 
@@ -34,50 +33,63 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-family: 'Vidaloka',"sans-serif";
+    font-weight:400;
+    font-size:24px;
     background-image: linear-gradient(#d8a4a4 30%, #af8281 70%);
     position: relative;
 
 }
 
-nav ul {
-    display: inline-flex;
-    list-style: none;
-    margin: 2.5rem;
-    padding: .2rem;
-    justify-content: left;
-
-}
 
 .logo {
     display: block;
     justify-content: flex-start;
     margin: 2px;
     padding: 10px;
-    color: hsl(0, 33%, 14%);
+}
+.logo h2{ 
+    font-family:'rye','cursive';
+    font-weight:400;
+    font-size: 2rem;
+    margin:4px;
+    color:#8E1414;
+   
 }
 
+nav ul {
+    display: inline-flex;
+    justify-content: left;
+    list-style: none;
+    margin: 2.5rem;
+    padding: .2rem;
+    
+}
 
-nav a {
-
+nav a{
     text-decoration: none;
     margin: .5rem;
-    color: hsl(0, 33%, 14%);
-}
+    color:#8E1414;
 
+}
 nav li {
     display: inline-flex;
     padding: 0;
     
 
 }
+h1 {
+    font-family:'Vidaloka','san-serif';
+    font-size: 14vw;
+    display:flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+}
 
 #wrapper {
 
     z-index: 100;
-}
-
-#wrapper:hover {
-    opacity: 0.7;
 }
 
 
@@ -90,11 +102,10 @@ nav li {
     height: 90vh;
     width: 100%;
     
-    color:#09363f;
+    color:#116a7c;
 
 
 }
-
 
 
 .title {
@@ -115,25 +126,35 @@ nav li {
 }
 
 .button{
-    margin:auto;
-    padding-bottom:5px;
+    font-family: 'Vidaloka',serif;
+    font-weight: 400;
+    padding-left:-4rem ;
+    padding-bottom:-4rem;
+    margin:5px;
     text-align:center;
     width: 150px;
-    height: 40px;
-    font-size:1rem;
+    height: 50px;
+    font-size:1.5em;
     color:hsl(0, 33%, 14%);
-    
     background-color:transparent;
     border:3px solid #af8281 ;
     border-radius: 10px;
+    animation:button_up 1s 2s ease-in both;
 }
- .button a {
-     color:hsl(0, 33%, 14%);
-     text-decoration: none;
-     text-justify: auto;
-     padding:5px;
 
- }
+.button a {
+color:#8E1414;
+ text-decoration: none;
+ text-align: center;
+ 
+
+}
+.button:hover {
+
+filter: drop-shadow(.5rem 1rem .5rem rgb(236, 155, 49));
+transform: scale(1,2);
+}
+
 
 @keyframes text-clip {
 
@@ -177,6 +198,21 @@ nav li {
 
     }
 
+}
+
+@keyframes button_up {
+
+    from{
+         
+         transform:translateY(300px);
+    }
+
+  to {
+        
+          transform:none;
+
+
+  }
 }
 
 .firstname,
@@ -262,6 +298,14 @@ nav li {
         clip-path: polygon(0% 0%, 100% 0% , 100% 100%, 0% 100%);
     }
 }
+
+.icons{
+    margin:15px;
+    width:30px;
+    height:30px;
+    
+}
+
 footer{
     display:flex;
     justify-content: space-evenly;
@@ -273,32 +317,39 @@ footer{
     color:#ffe3d6;
 }
 
+    @media screen and (min-width:650px){
 
+   
+        nav li{
+           
+        padding:1rem;
+            font-size:2rem;
+            
+            
+        }
+           
+            main {   
+                display: block;
+                max-width:100%;
+        
+            }
+            .firstname, .lastname{
+        
+                display:inline-block;
+            }
+        
+         .image {
+        
+            display: grid;
+            grid-row: 1;
+            grid-column: 2;
+            animation: image-in 1s 2s backwards;
+            transform: translate(-10% ,40%);
+        
+        
+        
+        }
 /*@media screen and (min-width:650px){
-
-    body{
-
-        font-size:2rem;
-    }
-
-    .parent{
-        display: block;
-        justify-content: space-evenly;
-    }
-
-    main {   
-        display: block;
-        max-width:90vw;
-
-    }
-    .firstname, .firstname-inner, .lastname, .lastname-inner{
-
-        display: block;
-    }*/
-
- 
-
-@media screen and (min-width:650px){
 
     main {   
         display: inline-block;
@@ -324,12 +375,12 @@ footer{
     padding:2rem;
     animation: image-in 1s 1s backwards;
     transform: translateX(10%);
-}
+}*/
 
                  
 
  
-} 
+
 
 
 

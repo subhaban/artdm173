@@ -62,10 +62,19 @@ nav li {
 }
 
 h1 {
+    font-family:'Vidaloka','san-serif';
+    font-size: 14vw;
+    display:flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
     font-size: 2rem;
     text-align: center;
 
 }
+
+    
+  
 
 .parent{
 
@@ -75,6 +84,8 @@ justify-content:center;
 margin:20px;
 text-align: center;;
 }
+
+
 .child {
     display: flex;
     flex-direction:column;

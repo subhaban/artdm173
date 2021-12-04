@@ -1,75 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Vidaloka&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Roboto+Condensed&family=Roboto:ital,wght@0,400;0,500;1,400&family=Rye&family=Vidaloka&display=swap');
 
 * {
+    position: relative;
     box-sizing: border-box;
+
+
 }
-
-/*stylesheet for contact page*/
-
 body {
-
-    font-size: 1rem;
-    font-family: "roboto", "san-serif";
-    font-weight: 400;
-    color: #09363f;
-    background-image: radial-gradient(#eccdbe, #997a7c);
-    align-items: center;
+    
+    font-family: 'Roboto',"sans-serif";
+    font-weight:400;
+    font-size:1rem;
+    background-color: #ecded7;
+    color:#09363f;
 }
-
-
 .container {
-    margin: 10px;
+    margin: 5px;
     padding: .5rem;
     background-image: radial-gradient(#eccdbe, #eec5c7);
     background-repeat: no-repeat;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
-    text-align: center;
+    max-height:200vw;
 
 }
 
-header {
+   header {
+
     margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-family: 'Vidaloka',"sans-serif";
+    font-weight:400;
+    font-size:24px;
     background-image: linear-gradient(#d8a4a4 30%, #af8281 70%);
     position: relative;
 
 }
 
 
-nav ul {
-    display: inline-flex;
-    list-style: none;
-    margin: 2.5rem;
-    padding: .2rem;
-    justify-content: left;
-
-}
-
 .logo {
     display: block;
     justify-content: flex-start;
     margin: 2px;
-    color: #2f1818;
+    padding: 10px;
+}
+.logo h2{ 
+    font-family:'rye','cursive';
+    font-weight:400;
+    font-size: 2rem;
+    margin:4px;
+    color:#8E1414;
+   
 }
 
+nav ul {
+    display: inline-flex;
+    justify-content: left;
+    list-style: none;
+    margin: 2.5rem;
+    padding: .2rem;
+    
+}
 
-nav a {
-
+nav a{
     text-decoration: none;
     margin: .5rem;
-    color: hsl(0, 33%, 14%);
-}
+    color:#8E1414;
 
+}
 nav li {
     display: inline-flex;
     padding: 0;
+    
 
 }
 
@@ -160,7 +165,36 @@ h1 {
     transform: translateY(-2.5em) scale(.8);
 }
 
+.button{
+    font-family: 'Vidaloka',serif;
+    font-weight: 400;
+    padding-left:-4rem ;
+    padding-bottom:-4rem;
+    margin:5px;
+    text-align:center;
+    width: 150px;
+    height: 50px;
+    font-size:1.5em;
+    color:#8E1414;;
+    background-color:transparent;
+    border:3px solid #af8281 ;
+    border-radius: 10px;
+    animation:button_up 1s 2s ease-in both;
+}
 
+.button a {
+ color:#8E1414;
+ text-decoration: none;
+ text-align: center;
+ 
+
+}
+.button:hover {
+
+filter: drop-shadow(.5rem 1rem .5rem rgb(236, 155, 49));
+transform: scale(1,2);
+cursor: pointer;
+}
 
 footer {
     display: flex;
