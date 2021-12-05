@@ -23,7 +23,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-height:200vw;
+    max-height:100%;
 
 }
 
@@ -139,7 +139,7 @@ h1 {
     background-color:transparent;
     border:3px solid #af8281 ;
     border-radius: 10px;
-    animation:button_up 1s 2s ease-in both;
+    animation:button_up 1s 1s ease-in both;
 }
 
 .button a {
@@ -156,64 +156,6 @@ transform: scale(1,2);
 }
 
 
-@keyframes text-clip {
-
-    from {
-
-        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-    }
-
-    to {
-
-        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    }
-
-}
-
-@keyframes outer-left {
-
-    from {
-        
-        transform: translate(60%);
-       
-    }
-
-    to {
-        transform: none;
-
-    }
-
-}
-
-
-@keyframes inner-left {
-
-    from {
-        transform: translate(-60%);
-      
-    }
-
-    to {
-        transform: none;
-
-    }
-
-}
-
-@keyframes button_up {
-
-    from{
-         
-         transform:translateY(300px);
-    }
-
-  to {
-        
-          transform:none;
-
-
-  }
-}
 
 .firstname,
 .lastname {
@@ -271,21 +213,77 @@ transform: scale(1,2);
     transform: translateX(10%);
 }
 
-/*.hero-image {
+/* Animation details*/
+@keyframes text-clip {
+
+    from {
+
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
+
+    to {
+
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+}
+
+@keyframes outer-left {
+
+    from {
+        
+        transform: translate(60%);
+       
+    }
+
+    to {
+        transform: none;
+
+    }
+
+}
+
+
+@keyframes inner-left {
+
+    from {
+        transform: translate(-60%);
+      
+    }
+
+    to {
+        transform: none;
+
+    }
+
+}
+
+@keyframes button_up {
+
+    from{
+         
+         transform:translateY(600px);
+    }
+
+  to {
+        
+          transform:none;
+
+
+  }
+}
+
+.hero-image {
 
     max-width: 45vmax;
     display: grid;
     grid-row: 1;
-    grid-column: 2;
-    
+    grid-column: 2; 
     padding-right: 1rem;
+    animation: image-in 1s 1s backwards;
+    transform: translateX(30%);
 
-    animation: image-in 1s 2s backwards;
-    transform: translateX(50%);
-
-
-
-}*/
+}
 
 @keyframes image-in {
 
@@ -345,8 +343,16 @@ footer{
             grid-column: 2;
             animation: image-in 1s 2s backwards;
             transform: translate(-10% ,40%);
-        
-        
+         }
+            .img-specs , .hero-image{
+
+                width: 75%;
+                max-width:70vw;
+                height: 50vh;
+                padding:2rem;
+                animation: image-in 1s 1s backwards;
+                transform: translateX(10%);
+            }
         
         }
 /*@media screen and (min-width:650px){

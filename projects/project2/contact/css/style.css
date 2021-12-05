@@ -78,15 +78,25 @@ nav li {
 
 }
 
-h1 {
+/*h1 {
     font-family: "Vidaloka"sans-serif;
     font-weight: 700;
     font-size: 2rem;
     text-align: center;
 
+}*/
+h1 {
+    font-family:'Vidaloka','san-serif';
+    font-size: 14vw;
+    display:flex;
+    justify-content: space-evenly;
+    justify-items: center;
+    text-align: center;
+    color:#116a7c;
 }
 
-.text {
+.text ,p {
+    font-size: 3vw;
     text-align: center;
 }
 
@@ -196,6 +206,14 @@ transform: scale(1,2);
 cursor: pointer;
 }
 
+.icons{
+    margin:15px;
+    width:30px;
+    height:30px;
+    
+}
+
+
 footer {
     display: flex;
     justify-content: space-evenly;
@@ -207,3 +225,26 @@ footer {
 
 
 }
+@media screen and (min-width:650px){
+
+   body{
+       font-size:1remw;
+   }
+   nav li{
+       
+    padding:1rem;
+    font-size:2rem;
+    
+    
+}
+    
+        main {   
+            display: block;
+            max-width:100%;
+    
+        }
+.container{
+    max-width:100%;
+}
+
+    }
